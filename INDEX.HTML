@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QUÍMICA GO - UIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burbujas-bg" id="burbujas"></div>
+
+    <div id="pantalla-inicio" class="escena">
+        <div class="glow"></div>
+        <div class="personaje-principal">🧪</div>
+        <h1 class="titulo-juego">QUÍMICA<br><span class="highlight">GO!</span></h1>
+        <div class="tarjeta-info">
+            <p>👨‍🔬 INVESTIGADOR:</p>
+            <h3>MIGUEL ÁLVAREZ</h3>
+        </div>
+        <button id="btn-jugar" class="btn-principal">¡TAP PARA JUGAR!</button>
+        <p class="institucion">UIS - 2026</p>
+    </div>
+
+    <div id="pantalla-juego" class="escena hidden">
+        <div class="header-juego">
+            <div class="stat">
+                <span class="icon">🏆</span>
+                <span id="score">000</span>
+            </div>
+            <div id="timer-label" class="timer-circulo">15</div>
+            <div class="stat">
+                <span id="current-level">1/15</span>
+            </div>
+        </div>
+
+        <div class="barra-progreso">
+            <div id="progreso-fill" class="progreso-fill"></div>
+        </div>
+
+        <div class="contenedor-pregunta">
+            <h2 id="texto-pregunta">¿Preparando reactivos?</h2>
+        </div>
+
+        <div id="opciones-grid" class="opciones-grid">
+            </div>
+    </div>
+
+    <div id="pantalla-final" class="escena hidden">
+        <div class="final-card">
+            <h1 id="resultado-titulo">¡FIN!</h1>
+            <div class="trofeo-final" id="trofeo-emoji">🏆</div>
+            <p>Puntaje obtenido:</p>
+            <div id="puntaje-final" class="puntaje-grande">0</div>
+            <button onclick="location.reload()" class="btn-principal">REINTENTAR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
